@@ -27,6 +27,8 @@ for symb_1 in my_string_1:
 
 ############################################ 3
 my_string = "0123456789"
+my_list = []
 for symb_1 in my_string:
     for symb_2 in my_string:
-        print(int(symb_1 + symb_2))
+        my_list.append(int(symb_1 + symb_2))
+print(my_list)

@@ -28,6 +28,6 @@ while val_ch:
         value = float(value)
         print(value ** -1)
         break
-    except (ValueError):
-        print(f"Введите целое число или число с \".\" или с \",\"")
+    except (ValueError, ZeroDivisionError):
+        print(f"Введите целое число или число с \".\" или с \",\". 0 вводить нельзя")
 
