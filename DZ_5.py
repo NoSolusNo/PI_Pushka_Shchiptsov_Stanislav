@@ -1,12 +1,6 @@
 ################## 1. Дано целое число (int). Определить сколько нулей в этом числе.
 my_int = 102030405060700000000000000000000
-count = 0
-for symbol in str(my_int):
-    if int(symbol) == 0:
-        count += 1
-    else:
-        pass
-print(count)
+print(str(my_int).count("0"))
 ################## 2. Дано целое число (int). Определить сколько нулей в конце этого числа.
 count = 0
 for symbol in str(my_int)[::-1]:
