@@ -62,11 +62,10 @@ print(my_sum)
 my_str = "qwer  tyu"
 my_list = []
 n = 2
+if len(my_str) % 2:
+    my_str += "_"
 for index in range(0, len(my_str), n):
     my_list.append(my_str[index:index + n])
-if len(my_list[-1]) < n:
-    last_elem = my_list.pop(-1)
-    my_list.append(last_elem + "_" * (n - len(last_elem)))
 print(my_list)
 
 ################## 8. Дана строка my_str в которой символы не повторяются и два символа
